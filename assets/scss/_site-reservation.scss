@@ -1,0 +1,59 @@
+.site-reservation {
+    display: flex;
+    background:lightgrey;
+    opacity: 0.9;
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        max-width: 60%;
+        
+    }
+
+    .heading-section {
+        text-align: center;
+        padding-top: 20px;
+
+        .subheading {
+            color: $color;
+            font-size: 35px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .row {
+        margin: 50px 0;
+        justify-content: center;
+        background: $primary_color !important;
+        border-radius: 10px;
+    }
+
+    .btn-primary {
+        margin-left: auto;
+        background: $color !important;
+        border: 0;
+        border-radius: 0;
+        padding: 5px 15px;
+
+        a{
+            text-decoration: none;
+            color: $primary_color;
+        }
+    }
+
+    input {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .site-reservation {
+        .container {
+            max-width: 80%;
+        }
+    }
+}

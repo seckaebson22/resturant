@@ -1,0 +1,241 @@
+.dashboard {
+    display: flex;
+
+    .container {
+        max-width: 100%;
+    }
+
+    // aside css
+    .aside {
+        background: $background;
+        padding: 0;
+        height: 100vh;
+
+        .dashboard-title-logo {
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    
+        h2 {
+            font-size: 35px;
+            color: $primary_color;
+            padding: 20px 0;
+            margin: 0;
+            border-bottom: 1px solid $background;
+        }
+
+        .tabs {
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            background: $background !important;
+            border-radius: 0; 
+            padding: 0;
+            text-align: justify;
+            display: flex;
+        }
+
+        .active {
+            background: $hover_color !important;
+        }
+
+        a {
+            flex: 1;
+            max-width: 100% !important;
+            font-size: 20px;
+            padding: 10px 20px;
+            color: $primary_color;
+            text-decoration: none;
+        }
+    }
+
+    //Custom scroll bar
+    .main-content::-webkit-scrollbar {
+        width: 10px;
+        min-height: 40px;
+    }
+
+    .main-content::-webkit-scrollbar-thumb {
+        background: $background;
+        border-radius: 10px;
+    }
+
+    // main content css
+    .main-content {
+        max-width: 100%;
+        padding: 0;
+        max-height: 100vh;
+        overflow: scroll;
+
+        .main-content-nav {
+            min-height: 80px;
+            background: $primary_color;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        ul {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        li {
+            padding-right: 25px;
+            list-style: none;
+            position: relative;
+
+            .fa-sort-desc {
+                font-size: 20px;
+                padding-left: 5px;
+            }
+
+            ul {
+                position: absolute;
+                top: 20px;
+                left: 60px;
+                display: none;
+
+                a{
+                    background: $background !important;
+                    color: $primary_color;
+                    padding: 2px 12px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: $secondary_color;
+        }
+
+        img{
+            max-width: 20px;
+            max-height: 20px;
+        }
+
+        .container {
+            max-width: 100%;
+        }
+
+        .dashboard-title {
+            min-height: 50px;
+            background: $content_background;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+
+        .heading-date {
+            margin-left: auto;
+        }
+
+        .dashboard-info {
+            background: $content_background_1;
+            height: auto;
+
+            .container {
+                max-width: 98%;
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .col-md-4 {
+            max-width: 350px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+            margin: 50px 0;
+        }
+
+        .dashboard-center{
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            color: $primary_color;
+            font-size: 25px;
+            min-width: 90%;
+        }
+
+        .dashboard-report {
+            padding-right: 20px;
+        }
+
+        .orders {
+            background: #008080;
+        }
+
+        .sales {
+            background: #FF00FF;
+        }
+        
+        .profits {
+            background: #800000;
+        }
+
+        .report-logo {
+            margin-left: auto;
+            .fa {
+                font-size: 70px;
+            }
+        }
+
+        .table-responsive {
+            margin: 50px 0;
+            background: $primary_color !important;
+        }
+
+        .fa-trash-o {
+            color: $primary_color;
+        }
+
+        .btn-primary,
+        .btn-danger {
+            min-width: 25px;
+            min-height: 25px;
+            position: relative;
+        
+            a{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $primary_color;
+            }
+        }
+
+        .col-md-12 {
+            max-width: 98%;
+            padding: 20px 0;
+        }
+
+        .btn-primary {
+            background: $background;
+        }
+
+        // a{
+        //     color: $primary_color;
+        // }
+
+    }
+}
+
+@media only screen and (max-width: 950px){
+    
+}

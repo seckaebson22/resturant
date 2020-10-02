@@ -1,0 +1,65 @@
+.registration {
+    background: $background;
+    height: 100vh;
+    position: relative;
+
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 35%;
+        background: $primary_color !important;
+        box-shadow: 0 0 2px 1px $primary_color;
+        padding: 50px 20px;
+        border-radius: 10px !important;
+    }
+
+    .row {
+        max-width: 90% !important;
+        margin: auto;
+    }
+
+    input {
+        border-radius: 0;
+        padding: 10px;
+        background: lightgrey;
+        opacity: 0.9;
+    }
+
+    .btn {
+        min-width: 100%;
+        border-radius: 0;
+        background: $background;
+        padding: 10px;
+    }
+
+    p{
+        text-align: center;
+        padding-top: 15px;
+        color: lightgrey;
+        opacity: 0.9;
+    }
+
+    a{
+        text-decoration: none !important;
+        color: $background !important;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px){
+    .registration {
+        .container {
+            min-width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .registration {
+        .container {
+            min-width: 80%;
+            padding: 10px;
+        }
+    }
+}

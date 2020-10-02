@@ -1,0 +1,44 @@
+.site-services {
+    padding: 50px 0;
+    background: $primary_color !important;
+    height: auto;
+
+    .heading-section {
+        text-align: center;
+        padding-top: 20px;
+
+        .subheading {
+            color: $color;
+            font-size: 35px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .col-md-4 {
+        padding-top: 50px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fa {
+        font-size: 50px;
+        opacity: 0.8;
+    }
+
+    .media-body {
+        padding-top: 10px;
+    }
+
+    .heading,
+    p {
+        text-align: center;
+        opacity: 0.8;
+    }
+}

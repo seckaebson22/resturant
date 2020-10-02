@@ -1,0 +1,79 @@
+.site-contact {
+    background: rgb(236, 234, 234);
+    padding-top: 40px;
+
+    .heading-section {
+        text-align: center;
+        padding: 20px 0;
+
+        .subheading {
+            color: $color;
+            font-size: 35px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .form-group {
+        label {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        input,
+        textarea {
+            border-radius: 0;
+            border: 1px solid $secondary_color;
+            opacity: 0.55;
+        }
+
+        textarea {
+            height: 200px;
+        }
+    }
+
+    .btn-primary {
+        background: $color !important;
+        color: $primary_color;  
+        border: 0;
+        border-radius: 0;
+        padding: 5px 15px;
+
+        &:hover,
+        &:link {
+            border: 0;
+        }
+
+    }
+
+    .contact-info {
+        padding: 10px 30px;
+
+        .contact-content {
+            &:last-child {
+                padding-top: 40px;
+            }
+        }
+
+        h3 {
+            font-weight: lighter;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $color;
+            max-width: 50%;
+        }
+
+
+        p {
+            display: flex;
+
+            span {
+                max-width: 40%;
+                flex: 1;
+            }
+        }
+
+    }
+}

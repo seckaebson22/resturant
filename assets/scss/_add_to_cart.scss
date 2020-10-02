@@ -1,0 +1,126 @@
+.add-to-cart {
+    background: lightgrey;
+    padding: 20px 0;
+
+    .container {
+        max-width: 96% !important;
+        background: $primary_color;
+        padding: 20px 0;
+    }
+
+    .row {
+        max-width: 100% !important;
+        margin: 0 20px;
+    }
+
+    .cart-body {
+        border: 1px solid $color;
+        padding: 50px;
+        max-width: 40%;
+        margin: auto;
+    }
+
+    .fa-shopping-cart {
+        font-size: 100px;
+    }
+
+    h3 {
+        font-weight: 500;
+    }
+
+    .cart-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn-primary {
+        margin-top: 10px;
+        min-width: 60%;
+        border: 0;
+        border-radius: 10px;   
+        background: $color !important;
+        justify-content: flex-start;
+
+        &:hover {
+            background: $color !important;
+        }
+    }
+
+    .btn-order {
+        max-width: 40%;
+        margin:10px  auto;
+    }
+
+    a {
+        color: $primary_color;
+        text-decoration: none;
+
+        &:hover,
+        &:visited {
+            color: $primary_color;
+            text-decoration: none;
+        }
+    }
+
+    .btn-danger {
+        min-width: 25px;
+        min-height: 25px;
+        position: relative;
+
+        .fa-trash-o {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .col-md-3{
+        max-height: 300px; 
+        border: 1px solid $color;
+        border-radius: 10px;
+    }
+
+    .col-md-9 {
+        h2 {
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-right: 10px;
+        }
+
+        input {
+            border: 1px solid $color;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    }
+
+
+    .order-box {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        h4,
+        .subtotal,
+        .total,
+        .checkout-btn {
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 10px;
+        }
+
+        .subtotal,
+        .total {
+            display: flex;
+        
+            p{
+                margin-left: auto;
+            }
+        }
+    }
+    
+}
